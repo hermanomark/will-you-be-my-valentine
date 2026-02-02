@@ -62,7 +62,7 @@ const generatePieces = (count: number): ConfettiPiece[] => {
  * - Random colors, positions, and rotations
  * - Auto-cleanup after animation
  */
-export const Confetti: React.FC<ConfettiProps> = ({
+const Confetti: React.FC<ConfettiProps> = ({
   isActive,
   count = 50,
 }) => {

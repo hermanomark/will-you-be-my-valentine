@@ -94,7 +94,7 @@ const generateHearts = (count: number): FloatingHeartProps[] =>
     ],
   }));
 
-export const FloatingHearts: React.FC<FloatingHeartsProps> = ({ count = 15 }) => {
+const FloatingHearts: React.FC<FloatingHeartsProps> = ({ count = 15 }) => {
   // Generate random heart configurations only once on initial mount
   const [hearts] = useState<FloatingHeartProps[]>(() => generateHearts(count));
 

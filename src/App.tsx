@@ -1,11 +1,9 @@
 import { useState, useCallback } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import {
-  FloatingHearts,
-  Confetti,
-  LandingScreen,
-  SuccessScreen,
-} from './components';
+import FloatingHearts from './components/FloatingHearts';
+import Confetti from './components/Confetti';
+import LandingScreen from './components/LandingScreen';
+import SuccessScreen from './components/SuccessScreen';
 
 /**
  * Playful messages to show when the "No" button is clicked
@@ -43,7 +41,7 @@ const noButtonMessages = [
  * - Confetti celebration on acceptance
  * - Beautiful success screen with heartfelt message
  */
-function App() {
+const App = () => {
   // Track which screen to display
   const [hasAccepted, setHasAccepted] = useState(false);
   

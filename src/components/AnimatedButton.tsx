@@ -79,7 +79,7 @@ const variantStyles: Record<ButtonVariant, string> = {
  * - Optional icon support with Lucide React
  * - Accessible and responsive design
  */
-export const AnimatedButton: React.FC<AnimatedButtonProps> = ({
+const AnimatedButton: React.FC<AnimatedButtonProps> = ({
   children,
   onClick,
   variant = 'primary',
@@ -96,7 +96,7 @@ export const AnimatedButton: React.FC<AnimatedButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
       className={`
-        px-8 py-4 max-h-[60px] rounded-full
+        px-8 py-4 max-h-15 rounded-full
         text-lg tracking-wide
         transition-colors duration-300
         flex items-center justify-center gap-2

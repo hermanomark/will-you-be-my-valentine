@@ -73,7 +73,7 @@ const celebrateVariants: Variants = {
  * - Heartfelt thank you message
  * - Option to restart the experience
  */
-export const SuccessScreen: React.FC = () => {
+const SuccessScreen: React.FC = () => {
   return (
     <motion.div
       className="min-h-screen flex flex-col items-center justify-center px-4 py-8 relative overflow-hidden"
@@ -137,7 +137,7 @@ export const SuccessScreen: React.FC = () => {
           }}
         >
           <div className="relative">
-            <div className="w-24 h-24 md:w-28 md:h-28 bg-gradient-to-br from-rose-400 to-pink-500 rounded-full flex items-center justify-center shadow-lg shadow-rose-300/50 animate-pulse-glow">
+            <div className="w-24 h-24 md:w-28 md:h-28 bg-linear-to-br from-rose-400 to-pink-500 rounded-full flex items-center justify-center shadow-lg shadow-rose-300/50 animate-pulse-glow">
               <Heart className="w-12 h-12 md:w-14 md:h-14 text-white fill-white" />
             </div>
           </div>

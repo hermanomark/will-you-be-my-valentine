@@ -85,7 +85,7 @@ const heartVariants: Variants = {
  * - Smooth entrance animations
  * - Responsive mobile-first design
  */
-export const LandingScreen: React.FC<LandingScreenProps> = ({
+const LandingScreen: React.FC<LandingScreenProps> = ({
   onYes,
   onNo,
   noButtonScale,
@@ -144,7 +144,7 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({
           className="font-romantic text-4xl md:text-5xl lg:text-6xl text-rose-600 mb-4 text-shadow-soft"
           variants={itemVariants}
         >
-          Will you be my
+          Jannie, will you be my
         </motion.h1>
         <motion.h2
           className="font-romantic text-5xl md:text-6xl lg:text-7xl text-rose-500 mb-8 text-shadow-soft"
@@ -192,14 +192,6 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({
           </motion.div>
         </motion.div>
       </motion.div>
-
-      {/* Footer message */}
-      {/* <motion.p
-        className="mt-8 text-rose-300 text-sm"
-        variants={itemVariants}
-      >
-        Made with love ❤️
-      </motion.p> */}
     </motion.div>
   );
 };
